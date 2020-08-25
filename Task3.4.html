@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Changing Bg Color</title>
+	<script type="text/javascript">
+		var btn=document.querySelector('button');
+
+		function random(number){
+			var r=Math.random();
+			var mul=(r*(number+1));
+			var floorprocess= Math.floor(mul);
+			return floorprocess;
+
+		}
+		function ChangeBgColor(){
+			var x;
+			var rc= 'rgb('+random(255)+','+ random(255) +','+random(255)+')';
+			document.body.style.backgroundColor=rc;
+			document.getElementById('id').innerHTML.value(x);
+			 
+		}
+	</script>
+</head>
+<body>
+	 
+
+	<button id="id"onclick="ChangeBgColor()">Click To Change Bg</button>
+
+
+</body>
+</html>

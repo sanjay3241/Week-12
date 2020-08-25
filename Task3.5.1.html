@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working With NaN</title>
+</head>
+<body>
+	 <script type="text/javascript">
+
+	 	 
+		function add_element_to_array(){
+			var x = document.getElementById("text1").value;
+		
+	 	if(isNaN(x)){
+	 		document.write("Not A number");
+	 	}
+	 	else{
+	 		document.write("It is A number");
+	 	}
+	 }
+	 </script>
+	 <h1>Test Box : <br></h1>
+	<input type="text" id="text1" ></input>
+	<input type="submit" name="submit" onclick="add_element_to_array();">
+
+
+</body>
+</html>

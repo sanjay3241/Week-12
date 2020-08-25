@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working With Password Matching</title>
+</head>
+<body>
+
+	 
+		<h1>Enter A Password :<br></h1>
+	<input type="password" id="password1">
+	<h1>Confirm Password<br></h1>
+	<input type="password" id="password2"><br><br>
+	<input type="submit" name="submit" onclick="CheckPassword();">
+
+	<script type="text/javascript">
+		function CheckPassword(){
+			var password1=document.getElementById("password1").value;
+			var password2=document.getElementById("password2").value;
+			 
+		
+		if(password1==""){
+			alert("Please Enter A Password.");
+		}
+		else if(password2==""){
+			alert("Please Enter A Password.");
+		}
+		else if(password1 != password2){
+			alert("Enter A similar Password");
+		}
+		else  {
+			alert("Password Matched !");
+		}
+	}
+	</script> 
+	 
+
+</body>
+</html>
